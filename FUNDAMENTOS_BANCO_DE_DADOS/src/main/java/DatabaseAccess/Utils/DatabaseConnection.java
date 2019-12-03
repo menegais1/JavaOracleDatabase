@@ -1,12 +1,8 @@
-package DatabaseAccess;
+package DatabaseAccess.Utils;
 
 import oracle.jdbc.OracleDriver;
 
-import java.lang.reflect.Type;
-import java.math.BigDecimal;
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class DatabaseConnection {
 

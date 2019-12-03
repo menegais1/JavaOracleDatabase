@@ -1,13 +1,11 @@
-package DatabaseAccess;
+package DatabaseAccess.Utils;
 
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.JDBCType;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class TypeMapping {
 

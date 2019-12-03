@@ -1,4 +1,4 @@
-package DatabaseAccess;
+package DatabaseAccess.Utils;
 
 public class Tuple<T, U> {
 
