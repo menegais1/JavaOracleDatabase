@@ -2,7 +2,11 @@ package DatabaseAccess.View;
 
 
 import DatabaseAccess.Model.Client;
+import DatabaseAccess.Model.Entity;
+import DatabaseAccess.Model.Package;
+import DatabaseAccess.Model.Supplier;
 import DatabaseAccess.Utils.DatabaseConnection;
+import DatabaseAccess.Utils.ViewBuilder;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -10,11 +14,15 @@ import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -33,8 +41,10 @@ public class GUIView extends Application implements View {
 
 
         BorderPane root = new BorderPane();
+        TabPane tabs = new TabPane();
+
         initMenu(primaryStage, root);
-        initTableView(primaryStage, root);
+        ViewBuilder.inflateTableView(new Supplier(),primaryStage, root);
         primaryStage.setTitle("GitHubAnalyzer");
         primaryStage.setScene(new Scene(root, 1280, 700));
         primaryStage.show();
@@ -140,71 +150,7 @@ public class GUIView extends Application implements View {
         borderPane.setTop(menuBar);
     }
 
-    private void initTableView(Stage primaryStage, BorderPane borderPane) {
 
-        TableView<Client> table = new TableView<>();
-
-        Client c = new Client();
-
-        List<TableColumn<Client, String>> tableColumns = new ArrayList<>();
-        List<String> prettyNames = c.getPrettyNames();
-        List<String> fieldNames = c.getFieldNames(c.getClass());
-        for (int i = 0; i < fieldNames.size(); i++) {
-            TableColumn<Client, String> tableColumn = new TableColumn(prettyNames.get(i));
-            tableColumn.setCellValueFactory(new PropertyValueFactory<Client, String>(fieldNames.get(i)));
-            tableColumns.add(tableColumn);
-        }
-
-        table.getColumns().addAll(tableColumns);
-
-        try {
-            table.setItems(FXCollections.observableArrayList(c.getAll(DatabaseConnection.getInstance())));
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        borderPane.setCenter(table);
-    }
-
-//    private void initModalWindow(Stage primaryStage, EnadeRow row) {
-//        Stage modal = new Stage();
-//        ScrollPane scrollPane = new ScrollPane();
-//        VBox vBox = new VBox();
-//
-//        List<String> prettyNames = csvLoaderController.getFieldListPrettyNames();
-//
-//        for (String prettyName : prettyNames) {
-//            Label name = new Label(prettyName + ":");
-//            name.setPadding(new Insets(10, 10, 10, 10));
-//            name.setFont(new Font(20));
-//            Label value = new Label(csvLoaderController.getFieldValueByName(row, prettyName));
-//            value.setPadding(new Insets(0, 0, 0, 20));
-//            value.setFont(new Font(16));
-//            vBox.getChildren().addAll(name, value);
-//        }
-//
-//        Label name = new Label("Imagem:");
-//        name.setPadding(new Insets(10, 10, 10, 10));
-//        name.setFont(new Font(20));
-//        vBox.getChildren().add(name);
-//        if (row.getUrlCrop() != null) {
-//            try {
-//                Image image = new Image(new URL(row.getUrlCrop()).openStream());
-//                ImageView imageView = new ImageView(image);
-//                vBox.getChildren().add(imageView);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//        }
-//
-//        scrollPane.setContent(vBox);
-//        modal.setTitle("Informações adicionais");
-//        modal.setScene(new Scene(scrollPane, 800, 600));
-//        modal.initModality(Modality.APPLICATION_MODAL);
-//        modal.show();
-//
-//    }
 
     @Override
     public void init(String[] args) {

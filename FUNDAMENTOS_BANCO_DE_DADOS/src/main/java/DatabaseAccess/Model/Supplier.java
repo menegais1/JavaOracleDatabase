@@ -9,17 +9,20 @@ public class Supplier extends Entity<Supplier> {
 
     public Long id;
     public String name;
-    public String CPF_CNPJ;
+    public String CNPJ;
     public String city;
     public String country;
     public String UF;
     public String address;
     public String phone;
     public String email;
-    public String person_type;
 
     public Supplier(ResultSet result) {
         super(result);
+    }
+
+    public Supplier() {
+        super();
     }
 
     @Override
@@ -32,14 +35,13 @@ public class Supplier extends Entity<Supplier> {
         return "Supplier{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", CPF_CNPJ='" + CPF_CNPJ + '\'' +
+                ", CPF_CNPJ='" + CNPJ + '\'' +
                 ", city='" + city + '\'' +
                 ", country='" + country + '\'' +
                 ", UF='" + UF + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
-                ", person_type='" + person_type + '\'' +
                 '}';
     }
 
@@ -59,12 +61,12 @@ public class Supplier extends Entity<Supplier> {
         this.name = name;
     }
 
-    public String getCPF_CNPJ() {
-        return CPF_CNPJ;
+    public String getCNPJ() {
+        return CNPJ;
     }
 
-    public void setCPF_CNPJ(String CPF_CNPJ) {
-        this.CPF_CNPJ = CPF_CNPJ;
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
     }
 
     public String getCity() {
@@ -115,11 +117,4 @@ public class Supplier extends Entity<Supplier> {
         this.email = email;
     }
 
-    public String getPerson_type() {
-        return person_type;
-    }
-
-    public void setPerson_type(String person_type) {
-        this.person_type = person_type;
-    }
 }
