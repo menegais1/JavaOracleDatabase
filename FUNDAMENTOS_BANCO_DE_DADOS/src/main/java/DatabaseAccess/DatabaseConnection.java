@@ -44,7 +44,6 @@ public class DatabaseConnection {
     }
 
     public ResultSet Execute(String query, Tuple<Object, JDBCType>[] args) {
-        boolean result = false;
         PreparedStatement s = null;
         try {
             s = instantiantePrepareStatement(query, args);
@@ -57,7 +56,7 @@ public class DatabaseConnection {
     }
 
     private PreparedStatement instantiantePrepareStatement(String query, Tuple<Object, JDBCType>[] args) throws SQLException {
-        PreparedStatement s = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement s = connection.prepareStatement(query, new int[]{1});
         if (args != null && args.length > 0) {
             for (int i = 0; i < args.length; i++) {
                 Tuple<Object, JDBCType> arg = args[i];
