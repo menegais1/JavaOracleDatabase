@@ -2,7 +2,7 @@ package DatabaseAccess.Model;
 
 import java.sql.ResultSet;
 
-public class PaymentMethod extends Entity {
+public class PaymentMethod extends Entity<PaymentMethod> {
 
 
     public Long id;

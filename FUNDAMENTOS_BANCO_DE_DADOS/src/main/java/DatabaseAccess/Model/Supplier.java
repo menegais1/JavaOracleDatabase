@@ -4,7 +4,7 @@ package DatabaseAccess.Model;
 import java.sql.ResultSet;
 
 
-public class Supplier extends Entity {
+public class Supplier extends Entity<Supplier> {
 
     public Long id;
     public String name;

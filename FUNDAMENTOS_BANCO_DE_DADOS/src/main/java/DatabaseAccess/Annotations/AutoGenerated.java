@@ -1,4 +1,4 @@
-package DatabaseAccess.Model;
+package DatabaseAccess.Annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

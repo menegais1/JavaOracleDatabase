@@ -2,7 +2,7 @@ package DatabaseAccess.Model;
 
 import java.sql.ResultSet;
 
-public class Service extends Entity {
+public class Service extends Entity<Service> {
 
     public Long id;
     public String name;

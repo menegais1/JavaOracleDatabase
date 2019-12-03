@@ -15,13 +15,9 @@ public class DatabaseView {
 
         Client c = new Client();
         c = c.getSingle(1, DatabaseConnection.getInstance());
-        System.out.println(c.toString());
-        c.name = "Tabela anotacao";
-        c.CPF_CNPJ = "11111234";
-        c.id = c.insert(c, new String[]{"*"}, DatabaseConnection.getInstance());
-        //c = c.getSingle(, DatabaseConnection.getInstance());
-        System.out.println(c.toString());
-
+        c = c.getSingle(1, DatabaseConnection.getInstance());
+        c.name = "Roberto Menegais";
+        c.update(c,new String[]{"name"},DatabaseConnection.getInstance());
 
         Package p = new Package();
         List<Package> packages = new ArrayList<>();

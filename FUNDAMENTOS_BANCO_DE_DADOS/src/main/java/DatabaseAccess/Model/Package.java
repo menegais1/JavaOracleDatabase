@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSet;
 
-public class Package extends Entity {
+public class Package extends Entity<Package> {
 
     public Long id;
     public BigDecimal total_price;
