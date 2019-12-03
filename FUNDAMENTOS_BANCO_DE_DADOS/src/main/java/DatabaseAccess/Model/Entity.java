@@ -112,6 +112,15 @@ public class Entity<T> {
         return 1;
     }
 
+    public long delete(long id, DatabaseConnection db) {
+        String tableName = getTableName(this.getClass());
+        ResultSet result = db.Execute("DELETE FROM " + tableName + " WHERE ID = ?",
+                new Tuple[]{
+                        new Tuple<Object, JDBCType>(id, JDBCType.INTEGER)
+                });
+        return 1;
+    }
+
     private List<Tuple<Object, JDBCType>> getBindings(T e, List<Field> fields) {
         List<Tuple<Object, JDBCType>> binds = new ArrayList<>();
 

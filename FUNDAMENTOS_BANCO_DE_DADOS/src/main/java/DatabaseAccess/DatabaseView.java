@@ -18,7 +18,7 @@ public class DatabaseView {
         c = c.getSingle(1, DatabaseConnection.getInstance());
         c.name = "Roberto Menegais";
         c.update(c,new String[]{"name"},DatabaseConnection.getInstance());
-
+        c.delete(c.id,DatabaseConnection.getInstance());
         Package p = new Package();
         List<Package> packages = new ArrayList<>();
 
