@@ -16,7 +16,7 @@ public class ClientView extends BaseView {
 
     @Override
     public EventHandler onTabSelected() {
-        ViewBuilder.inflateTableView(controller.getModel(), controller.getAll(), primaryStage, borderPane);
+        ViewBuilder.inflateTableView(controller.getModel(),controller, controller.getAll(), primaryStage, borderPane);
         return null;
     }
 }

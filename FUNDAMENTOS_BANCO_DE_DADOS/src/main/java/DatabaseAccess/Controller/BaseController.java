@@ -32,4 +32,5 @@ public abstract class BaseController {
         return records;
     }
 
+    public abstract long delete(Entity e);
 }

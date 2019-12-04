@@ -16,7 +16,7 @@ import java.util.List;
 public class ViewBuilder {
 
 
-    public static void inflateTableView(Entity e, List<Entity> items, Stage primaryStage, BorderPane pane) {
+    public static void inflateTableView(Entity e, BaseController controller, List<Entity> items, Stage primaryStage, BorderPane pane) {
 
         TableView<Entity> table = new TableView<>();
         System.out.println(e.getClass());
@@ -30,13 +30,14 @@ public class ViewBuilder {
         }
         TableColumn<Entity, Button> removeButton = new TableColumn<>("Remove");
         removeButton.setCellFactory(ActionButtonTableCell.<Entity>forTableColumn("Remove", entity -> {
-
+            if (controller.delete(entity) > 0) {
+                table.setItems(FXCollections.observableArrayList(controller.getAll()));
+            }
             return entity;
         }));
 
         TableColumn<Entity, Button> updateButton = new TableColumn<>("Update");
         updateButton.setCellFactory(ActionButtonTableCell.<Entity>forTableColumn("Update", entity -> {
-            System.out.println(entity.name());
             return entity;
         }));
 
