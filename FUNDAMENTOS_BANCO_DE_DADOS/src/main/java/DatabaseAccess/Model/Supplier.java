@@ -27,7 +27,7 @@ public class Supplier extends Entity<Supplier> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass());
+        return getFieldNames(this.getClass(), null);
     }
 
     @Override

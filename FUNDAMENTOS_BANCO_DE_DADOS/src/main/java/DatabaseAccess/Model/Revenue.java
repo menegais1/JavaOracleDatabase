@@ -21,7 +21,7 @@ public class Revenue extends Entity<Revenue> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass());
+        return getFieldNames(this.getClass(),null);
     }
     @Override
     public String toString() {

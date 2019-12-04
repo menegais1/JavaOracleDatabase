@@ -33,4 +33,8 @@ public abstract class BaseController {
     }
 
     public abstract long delete(Entity e);
+
+    public abstract long insert(List<String> fields, List<String> values);
+
+    public abstract long update(Entity e, List<String> fields, List<String> values);
 }

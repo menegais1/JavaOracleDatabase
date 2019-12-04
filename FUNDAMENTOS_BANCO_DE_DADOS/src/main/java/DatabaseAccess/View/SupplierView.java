@@ -16,7 +16,7 @@ public class SupplierView extends BaseView {
 
     @Override
     public EventHandler onTabSelected() {
-        ViewBuilder.inflateTableView(controller.getModel(),controller, controller.getAll(), primaryStage, borderPane);
+        ViewBuilder.inflateTableView(controller, primaryStage, borderPane);
         return null;
     }
 }

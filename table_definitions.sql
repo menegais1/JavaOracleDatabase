@@ -55,7 +55,7 @@ CREATE TABLE client
 CREATE TABLE package
 (
     id                INTEGER GENERATED ALWAYS as IDENTITY primary key,
-    total_price       DECIMAL(12, 2) NOT NULL,
+    total_price       DECIMAL(12, 2) DEFAULT 0,
     order_date        DATE           NOT NULL,
     client_id         INTEGER        NOT NULL,
     payment_method_id INTEGER,
@@ -68,6 +68,7 @@ CREATE TABLE package_service
     id         INTEGER GENERATED ALWAYS as IDENTITY primary key,
     service_id INTEGER NOT NULL,
     package_id INTEGER NOT NULL,
+    UNIQUE(service_id, package_id),
     FOREIGN KEY (service_id) REFERENCES service ON DELETE CASCADE,
     FOREIGN KEY (package_id) REFERENCES package ON DELETE CASCADE
 );

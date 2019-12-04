@@ -27,12 +27,12 @@ INSERT INTO SERVICE(name, price, payment_method_id, service_type_id, supplier_id
 VALUES ('Hospedagem em cancum', 80000, 1, 1, 1);
 
 
-INSERT INTO PACKAGE(total_price, order_date, client_id)
-VALUES (10000, '11-12-2000', 1);
-INSERT INTO PACKAGE(total_price, order_date, client_id)
-VALUES (5000, '12-12-2000', 2);
-INSERT INTO PACKAGE(total_price, order_date, client_id)
-VALUES (2500, '12-12-2001', 2);
+INSERT INTO PACKAGE(order_date, client_id)
+VALUES ('11-12-2000', 1);
+INSERT INTO PACKAGE(order_date, client_id)
+VALUES ('12-12-2000', 2);
+INSERT INTO PACKAGE(order_date, client_id)
+VALUES ('12-12-2001', 2);
 
 INSERT INTO PACKAGE_SERVICE(package_id, service_id)
 values (1, 1);

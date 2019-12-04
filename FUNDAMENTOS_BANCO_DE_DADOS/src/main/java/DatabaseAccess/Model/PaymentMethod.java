@@ -17,7 +17,7 @@ public class PaymentMethod extends Entity<PaymentMethod> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass());
+        return getFieldNames(this.getClass(),null);
     }
     @Override
     public String toString() {

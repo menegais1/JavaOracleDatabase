@@ -7,6 +7,7 @@ import DatabaseAccess.Utils.DatabaseConnection;
 import DatabaseAccess.Utils.Tuple;
 import DatabaseAccess.Utils.TypeMapping;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 import java.sql.JDBCType;
 import java.sql.ResultSet;
@@ -201,11 +202,17 @@ public abstract class Entity<T> {
 
     }
 
-    public List<String> getFieldNames(Class<?> c) {
+    public List<String> getFieldNames(Class<?> c, List<Class<Annotation>> annotationClass) {
         List<String> fieldNames = new ArrayList<>();
         Field[] fields = c.getFields();
+        boolean add = true;
         for (Field field : fields) {
-            fieldNames.add(field.getName());
+            if(annotationClass != null)
+                for (Class<Annotation> annotation : annotationClass) {
+                    add = !field.isAnnotationPresent(annotation);
+                }
+            if (add)
+                fieldNames.add(field.getName());
         }
         return fieldNames;
     }
@@ -219,5 +226,16 @@ public abstract class Entity<T> {
 
     public abstract List<String> getPrettyNames();
 
-
+    public List<Tuple<Type, Object>> getData(List<String> fields, Entity e) {
+        List<Tuple<Type, Object>> data = new ArrayList<>();
+        for (String field : fields) {
+            try {
+                Field f = e.getClass().getField(field);
+                data.add(new Tuple<Type, Object>(f.getType(), f.get(e)));
+            } catch (NoSuchFieldException | IllegalAccessException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return data;
+    }
 }

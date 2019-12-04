@@ -31,7 +31,7 @@ public class Client extends Entity<Client> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass());
+        return getFieldNames(this.getClass(),null);
     }
 
     @Override

@@ -14,7 +14,7 @@ public class ServiceType extends Entity<ServiceType> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass());
+        return getFieldNames(this.getClass(),null);
     }
     @Override
     public String toString() {
