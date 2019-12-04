@@ -210,5 +210,14 @@ public abstract class Entity<T> {
         return fieldNames;
     }
 
+    public String name() {
+        Class<?> c = this.getClass();
+        if (c.isAnnotationPresent(Table.class))
+            return c.getAnnotation(Table.class).name();
+        return getTableName(c);
+    }
+
     public abstract List<String> getPrettyNames();
+
+
 }

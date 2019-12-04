@@ -1,32 +1,26 @@
 package DatabaseAccess.Utils;
 
+import DatabaseAccess.Controller.BaseController;
 import DatabaseAccess.Model.Entity;
 import javafx.collections.FXCollections;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ViewBuilder {
 
 
-    public static void inflateTableView(Entity e, Stage primaryStage, BorderPane borderPane) {
+    public static void inflateTableView(Entity e, List<Entity> items, Stage primaryStage, BorderPane pane) {
 
         TableView<Entity> table = new TableView<>();
         System.out.println(e.getClass());
-        List<TableColumn<Entity, String>> tableColumns = new ArrayList<>();
+        List tableColumns = new ArrayList<>();
         List<String> prettyNames = e.getPrettyNames();
         List<String> fieldNames = e.getFieldNames(e.getClass());
         for (int i = 0; i < fieldNames.size(); i++) {
@@ -34,16 +28,25 @@ public class ViewBuilder {
             tableColumn.setCellValueFactory(new PropertyValueFactory<>(fieldNames.get(i)));
             tableColumns.add(tableColumn);
         }
+        TableColumn<Entity, Button> removeButton = new TableColumn<>("Remove");
+        removeButton.setCellFactory(ActionButtonTableCell.<Entity>forTableColumn("Remove", entity -> {
+
+            return entity;
+        }));
+
+        TableColumn<Entity, Button> updateButton = new TableColumn<>("Update");
+        updateButton.setCellFactory(ActionButtonTableCell.<Entity>forTableColumn("Update", entity -> {
+            System.out.println(entity.name());
+            return entity;
+        }));
 
         table.getColumns().addAll(tableColumns);
+        table.getColumns().add(updateButton);
+        table.getColumns().add(removeButton);
+        table.setItems(FXCollections.observableArrayList(items));
 
-        try {
-            table.setItems(FXCollections.observableArrayList(e.getAll(DatabaseConnection.getInstance())));
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
 
-        borderPane.setCenter(table);
+        pane.setCenter(table);
     }
 
 //    public static void initModalWindow(Entity e, Stage primaryStage, EnadeRow row) {

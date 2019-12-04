@@ -1,37 +1,24 @@
 package DatabaseAccess.View;
 
 
+import DatabaseAccess.Controller.ClientController;
+import DatabaseAccess.Controller.SupplierController;
 import DatabaseAccess.Model.Client;
-import DatabaseAccess.Model.Entity;
-import DatabaseAccess.Model.Package;
 import DatabaseAccess.Model.Supplier;
-import DatabaseAccess.Utils.DatabaseConnection;
 import DatabaseAccess.Utils.ViewBuilder;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
+import javafx.event.EventType;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.stage.FileChooser;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import javax.swing.plaf.basic.BasicTabbedPaneUI;
 
 public class GUIView extends Application implements View {
 
@@ -42,10 +29,15 @@ public class GUIView extends Application implements View {
 
         BorderPane root = new BorderPane();
         TabPane tabs = new TabPane();
+        tabs.tabClosingPolicyProperty().setValue(TabPane.TabClosingPolicy.UNAVAILABLE);
+        ClientView clientView = new ClientView(new ClientController(), primaryStage,root);
+        SupplierView supplierView = new SupplierView(new SupplierController(), primaryStage,root);
+        tabs.getTabs().addAll(clientView.tab, supplierView.tab);
 
-        initMenu(primaryStage, root);
-        ViewBuilder.inflateTableView(new Supplier(),primaryStage, root);
-        primaryStage.setTitle("GitHubAnalyzer");
+        root.setTop(tabs);
+        //initMenu(primaryStage, root);
+        //  ViewBuilder.inflateTableView(new Supplier(),primaryStage, root);
+        primaryStage.setTitle("Agencia de Turismo");
         primaryStage.setScene(new Scene(root, 1280, 700));
         primaryStage.show();
     }
@@ -149,7 +141,6 @@ public class GUIView extends Application implements View {
         menuBar.getMenus().addAll(menu1, menu2, menu3);
         borderPane.setTop(menuBar);
     }
-
 
 
     @Override
