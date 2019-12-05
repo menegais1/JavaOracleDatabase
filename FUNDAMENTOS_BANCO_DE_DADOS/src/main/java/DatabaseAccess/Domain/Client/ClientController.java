@@ -14,6 +14,8 @@ public class ClientController extends BaseController {
         super(new Client());
     }
 
+
+
     @Override
     public long delete(Entity e) {
         Client c = (Client) e;

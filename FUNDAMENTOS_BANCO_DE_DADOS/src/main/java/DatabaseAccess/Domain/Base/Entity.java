@@ -203,13 +203,13 @@ public abstract class Entity<T> {
 
     }
 
-    public List<String> getFieldNames(Class<?> c, List<Class<Annotation>> annotationClass) {
+    public List<String> getFieldNames(Class<?> c, List<Class<Annotation>> annotationsToIgnore) {
         List<String> fieldNames = new ArrayList<>();
         Field[] fields = c.getFields();
         boolean add = true;
         for (Field field : fields) {
-            if(annotationClass != null)
-                for (Class<Annotation> annotation : annotationClass) {
+            if (annotationsToIgnore != null)
+                for (Class<Annotation> annotation : annotationsToIgnore) {
                     add = !field.isAnnotationPresent(annotation);
                 }
             if (add)
