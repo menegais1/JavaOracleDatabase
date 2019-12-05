@@ -5,6 +5,7 @@ import DatabaseAccess.Annotations.Table;
 import DatabaseAccess.Domain.Base.Entity;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 @Table(name="service_type")
@@ -14,7 +15,7 @@ public class ServiceType extends Entity<ServiceType> {
     public Long id;
     public String name;
 
-    public ServiceType(ResultSet result) {
+    public ServiceType(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 

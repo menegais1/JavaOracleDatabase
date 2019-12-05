@@ -6,6 +6,7 @@ import DatabaseAccess.Annotations.Table;
 import DatabaseAccess.Domain.Base.Entity;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 @Table(name = "CLIENT")
@@ -23,7 +24,7 @@ public class Client extends Entity<Client> {
     public String email;
     public String person_type;
 
-    public Client(ResultSet result) {
+    public Client(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 
@@ -32,7 +33,7 @@ public class Client extends Entity<Client> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass(),null);
+        return getFieldNames(this.getClass(), null);
     }
 
     @Override

@@ -5,6 +5,7 @@ import DatabaseAccess.Annotations.Table;
 import DatabaseAccess.Domain.Base.Entity;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 @Table(name = "package_service")
@@ -15,7 +16,7 @@ public class PackageService extends Entity<PackageService> {
     public Long service_id;
     public Long package_id;
 
-    public PackageService(ResultSet result) {
+    public PackageService(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 

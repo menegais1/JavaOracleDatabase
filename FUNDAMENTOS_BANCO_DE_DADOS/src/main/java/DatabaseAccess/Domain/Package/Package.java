@@ -6,6 +6,7 @@ import DatabaseAccess.Domain.Base.Entity;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Package extends Entity<Package> {
@@ -17,7 +18,7 @@ public class Package extends Entity<Package> {
     public Long client_id;
     public Long payment_method_id;
 
-    public Package(ResultSet result) {
+    public Package(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 
@@ -26,8 +27,9 @@ public class Package extends Entity<Package> {
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass(),null);
+        return getFieldNames(this.getClass(), null);
     }
+
     @Override
     public String toString() {
         return "Package{" +

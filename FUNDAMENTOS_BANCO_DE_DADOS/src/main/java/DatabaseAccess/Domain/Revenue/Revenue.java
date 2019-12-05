@@ -6,6 +6,7 @@ import DatabaseAccess.Domain.Base.Entity;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Revenue extends Entity<Revenue> {
@@ -19,7 +20,7 @@ public class Revenue extends Entity<Revenue> {
     public String status;
     public Long package_id;
 
-    public Revenue(ResultSet result) {
+    public Revenue(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
     public Revenue() {

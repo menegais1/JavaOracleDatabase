@@ -38,9 +38,15 @@ public class ViewBuilder {
         }
         TableColumn<Entity, Button> removeButton = new TableColumn<>("Remove");
         removeButton.setCellFactory(ActionButtonTableCell.<Entity>forTableColumn("Remove", entity -> {
-            if (controller.delete(entity) > 0) {
-                table.setItems(FXCollections.observableArrayList(controller.getAll()));
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Delete " + entity.name() + " ?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL);
+            alert.showAndWait();
+
+            if (alert.getResult() == ButtonType.YES) {
+                if (controller.delete(entity) > 0) {
+                    table.setItems(FXCollections.observableArrayList(controller.getAll()));
+                }
             }
+
             return entity;
         }));
 
@@ -64,7 +70,12 @@ public class ViewBuilder {
         List<TextField> textFields = new ArrayList<>();
 
         List<String> fields = e.getFieldNames(e.getClass(), null);
-        List<Tuple<Type, Object>> data = controller.getModel().getData(fields, e);
+        List<Tuple<Type, Object>> data = null;
+        try {
+            data = controller.getModel().getData(fields, e);
+        } catch (NoSuchFieldException | IllegalAccessException ex) {
+            ErrorHandler.HandleResponse(ex);
+        }
 
         for (int i = 0; i < fields.size(); i++) {
             String field = fields.get(i);

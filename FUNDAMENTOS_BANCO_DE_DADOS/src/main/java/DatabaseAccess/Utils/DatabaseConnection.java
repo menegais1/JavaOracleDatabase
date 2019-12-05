@@ -39,16 +39,11 @@ public class DatabaseConnection {
         return result;
     }
 
-    public ResultSet Execute(String query, Tuple<Object, JDBCType>[] args) {
+    public ResultSet Execute(String query, Tuple<Object, JDBCType>[] args) throws SQLException {
         PreparedStatement s = null;
-        try {
-            s = instantiantePrepareStatement(query, args);
-            s.execute();
-            return s.getGeneratedKeys();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
+        s = instantiantePrepareStatement(query, args);
+        s.execute();
+        return s.getGeneratedKeys();
     }
 
     private PreparedStatement instantiantePrepareStatement(String query, Tuple<Object, JDBCType>[] args) throws SQLException {

@@ -5,6 +5,7 @@ import DatabaseAccess.Annotations.Table;
 import DatabaseAccess.Domain.Base.Entity;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 @Table(name="payment_method")
@@ -16,7 +17,7 @@ public class PaymentMethod extends Entity<PaymentMethod> {
     public Long parcels;
     public Long due_days;
 
-    public PaymentMethod(ResultSet result) {
+    public PaymentMethod(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 

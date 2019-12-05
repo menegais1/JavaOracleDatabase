@@ -2,7 +2,9 @@ package DatabaseAccess.Domain.Base;
 
 import DatabaseAccess.Domain.Base.Entity;
 import DatabaseAccess.Utils.DatabaseConnection;
+import DatabaseAccess.Utils.ErrorHandler;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -26,8 +28,8 @@ public abstract class BaseController {
     public List<Entity> getAll() {
         try {
             records = model.getAll(DatabaseConnection.getInstance());
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException | InstantiationException | InvocationTargetException | NoSuchMethodException | IllegalAccessException e) {
+            ErrorHandler.HandleResponse(e);
         }
         return records;
     }

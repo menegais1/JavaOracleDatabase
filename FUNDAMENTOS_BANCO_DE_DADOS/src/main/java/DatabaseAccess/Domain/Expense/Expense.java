@@ -6,6 +6,7 @@ import DatabaseAccess.Domain.Base.Entity;
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 public class Expense extends Entity<Expense> {
@@ -20,7 +21,7 @@ public class Expense extends Entity<Expense> {
     public Long package_id;
     public Long supplier_id;
 
-    public Expense(ResultSet result) {
+    public Expense(ResultSet result) throws SQLException, IllegalAccessException {
         super(result);
     }
 
