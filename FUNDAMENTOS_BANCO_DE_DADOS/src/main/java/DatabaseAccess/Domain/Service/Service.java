@@ -20,6 +20,10 @@ public class Service extends Entity<Service> {
         super(result);
     }
 
+    public Service() {
+        super();
+    }
+
     @Override
     public List<String> getPrettyNames() {
         return getFieldNames(this.getClass(),null);

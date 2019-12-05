@@ -57,9 +57,7 @@ public abstract class Entity<T> {
     }
 
     public List<T> getAll(DatabaseConnection db) throws SQLException {
-        String tableName = getClass().getName();
-        String[] split = tableName.split("\\.");
-        tableName = split[split.length - 1];
+        String tableName = getTableName(this.getClass());
         ResultSet result = db.ExecuteQuery("SELECT * FROM " + tableName, null);
         List<T> entities = new ArrayList<>();
         while (result.next()) {

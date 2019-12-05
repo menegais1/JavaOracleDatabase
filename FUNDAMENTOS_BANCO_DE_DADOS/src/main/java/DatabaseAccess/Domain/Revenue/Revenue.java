@@ -22,6 +22,9 @@ public class Revenue extends Entity<Revenue> {
     public Revenue(ResultSet result) {
         super(result);
     }
+    public Revenue() {
+        super();
+    }
 
     @Override
     public List<String> getPrettyNames() {
