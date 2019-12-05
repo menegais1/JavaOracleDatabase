@@ -8,6 +8,7 @@ import DatabaseAccess.Utils.ErrorHandler;
 import DatabaseAccess.Utils.Helpers;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -16,7 +17,6 @@ public class ExpenseController extends BaseController {
     public ExpenseController() {
         super(new Expense());
     }
-
 
 
     @Override
@@ -49,7 +49,7 @@ public class ExpenseController extends BaseController {
 
 
             return c.insert(c, fields.toArray(new String[0]), DatabaseConnection.getInstance());
-        } catch (IllegalAccessException | NoSuchFieldException | SQLException e) {
+        } catch (IllegalAccessException | NoSuchFieldException | SQLException | InstantiationException | InvocationTargetException | NoSuchMethodException e) {
             ErrorHandler.HandleResponse(e);
         }
         return -1;
@@ -72,7 +72,7 @@ public class ExpenseController extends BaseController {
             }
 
             return e.update(e, fields.toArray(new String[0]), DatabaseConnection.getInstance());
-        } catch (IllegalAccessException | SQLException | NoSuchFieldException ex) {
+        } catch (IllegalAccessException | SQLException | NoSuchFieldException | InstantiationException | InvocationTargetException | NoSuchMethodException ex) {
             ErrorHandler.HandleResponse(ex);
         }
         return -1;
