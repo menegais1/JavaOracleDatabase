@@ -27,7 +27,6 @@ public class ViewBuilder {
     public static void inflateTableView(BaseController controller, Stage primaryStage, BorderPane pane) {
 
         TableView<Entity> table = new TableView<>();
-        System.out.println(controller.getModel().getClass());
         List tableColumns = new ArrayList<>();
         List<String> prettyNames = controller.getModel().getPrettyNames();
         List<String> fieldNames = controller.getModel().getFieldNames(controller.getModel().getClass(), null);
