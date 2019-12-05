@@ -1,5 +1,7 @@
-package DatabaseAccess.Model;
+package DatabaseAccess.Domain.Supplier;
 
+
+import DatabaseAccess.Domain.Base.Entity;
 
 import java.sql.ResultSet;
 import java.util.List;

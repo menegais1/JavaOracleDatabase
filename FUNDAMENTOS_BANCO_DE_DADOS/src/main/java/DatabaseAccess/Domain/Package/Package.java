@@ -1,4 +1,6 @@
-package DatabaseAccess.Model;
+package DatabaseAccess.Domain.Package;
+
+import DatabaseAccess.Domain.Base.Entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;

@@ -1,6 +1,6 @@
-package DatabaseAccess.Controller;
+package DatabaseAccess.Domain.Base;
 
-import DatabaseAccess.Model.Entity;
+import DatabaseAccess.Domain.Base.Entity;
 import DatabaseAccess.Utils.DatabaseConnection;
 
 import java.sql.SQLException;

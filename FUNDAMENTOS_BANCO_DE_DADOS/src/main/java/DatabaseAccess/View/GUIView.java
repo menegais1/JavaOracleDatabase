@@ -1,24 +1,18 @@
 package DatabaseAccess.View;
 
 
-import DatabaseAccess.Controller.ClientController;
-import DatabaseAccess.Controller.SupplierController;
-import DatabaseAccess.Model.Client;
-import DatabaseAccess.Model.Supplier;
-import DatabaseAccess.Utils.ViewBuilder;
-import com.sun.org.apache.bcel.internal.generic.NEW;
+import DatabaseAccess.Domain.Client.ClientController;
+import DatabaseAccess.Domain.Client.ClientView;
+import DatabaseAccess.Domain.Supplier.SupplierController;
+import DatabaseAccess.Domain.Supplier.SupplierView;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-
-import javax.swing.plaf.basic.BasicTabbedPaneUI;
 
 public class GUIView extends Application implements View {
 

@@ -1,11 +1,13 @@
-package DatabaseAccess.Model;
+package DatabaseAccess.Domain.Revenue;
+
+import DatabaseAccess.Domain.Base.Entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.util.List;
 
-public class Expense extends Entity<Expense> {
+public class Revenue extends Entity<Revenue> {
 
     public Long id;
     public Long parcels;
@@ -14,20 +16,18 @@ public class Expense extends Entity<Expense> {
     public BigDecimal value;
     public String status;
     public Long package_id;
-    public Long supplier_id;
 
-    public Expense(ResultSet result) {
+    public Revenue(ResultSet result) {
         super(result);
     }
 
     @Override
     public List<String> getPrettyNames() {
-        return getFieldNames(this.getClass(), null);
+        return getFieldNames(this.getClass(),null);
     }
-
     @Override
     public String toString() {
-        return "Expense{" +
+        return "Revenue{" +
                 "id=" + id +
                 ", parcels=" + parcels +
                 ", issue_date=" + issue_date +
@@ -37,6 +37,7 @@ public class Expense extends Entity<Expense> {
                 ", package_id=" + package_id +
                 '}';
     }
+
 
     public Long getId() {
         return id;
@@ -92,13 +93,5 @@ public class Expense extends Entity<Expense> {
 
     public void setPackage_id(Long package_id) {
         this.package_id = package_id;
-    }
-
-    public Long getSupplier_id() {
-        return supplier_id;
-    }
-
-    public void setSupplier_id(Long supplier_id) {
-        this.supplier_id = supplier_id;
     }
 }

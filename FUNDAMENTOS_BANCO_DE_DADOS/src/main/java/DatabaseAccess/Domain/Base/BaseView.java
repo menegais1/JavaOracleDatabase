@@ -1,11 +1,9 @@
-package DatabaseAccess.View;
+package DatabaseAccess.Domain.Base;
 
-import DatabaseAccess.Controller.BaseController;
-import DatabaseAccess.Model.Entity;
+import DatabaseAccess.Domain.Base.BaseController;
 import javafx.event.EventHandler;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public abstract class BaseView {

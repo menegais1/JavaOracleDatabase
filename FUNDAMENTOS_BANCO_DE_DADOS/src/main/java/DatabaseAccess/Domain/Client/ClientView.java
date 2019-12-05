@@ -1,14 +1,13 @@
-package DatabaseAccess.View;
+package DatabaseAccess.Domain.Client;
 
-import DatabaseAccess.Controller.BaseController;
+import DatabaseAccess.Domain.Base.BaseController;
 import DatabaseAccess.Utils.ViewBuilder;
+import DatabaseAccess.Domain.Base.BaseView;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-
-import java.awt.*;
 
 public class ClientView extends BaseView {
 

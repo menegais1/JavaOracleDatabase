@@ -1,8 +1,7 @@
-package DatabaseAccess.Controller;
+package DatabaseAccess.Domain.Supplier;
 
-import DatabaseAccess.Model.Client;
-import DatabaseAccess.Model.Entity;
-import DatabaseAccess.Model.Supplier;
+import DatabaseAccess.Domain.Base.BaseController;
+import DatabaseAccess.Domain.Base.Entity;
 import DatabaseAccess.Utils.DatabaseConnection;
 
 import java.util.List;
