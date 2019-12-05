@@ -1,30 +1,31 @@
-package DatabaseAccess.Domain.Client;
+package DatabaseAccess.Domain.Expense;
 
 import DatabaseAccess.Domain.Base.BaseController;
 import DatabaseAccess.Domain.Base.Entity;
+import DatabaseAccess.Domain.Expense.Expense;
 import DatabaseAccess.Utils.DatabaseConnection;
 import DatabaseAccess.Utils.Helpers;
 
 import java.lang.reflect.Field;
 import java.util.List;
 
-public class ClientController extends BaseController {
+public class ExpenseController extends BaseController {
 
-    public ClientController() {
-        super(new Client());
+    public ExpenseController() {
+        super(new Expense());
     }
 
 
 
     @Override
     public long delete(Entity e) {
-        Client c = (Client) e;
+        Expense c = (Expense) e;
         return c.delete(c.id, DatabaseConnection.getInstance());
     }
 
     @Override
     public long insert(List<String> fields, List<String> values) {
-        Client c = new Client();
+        Expense c = new Expense();
         for (int i = 0; i < fields.size(); i++) {
             String fieldName = fields.get(i);
             try {

@@ -24,6 +24,10 @@ public class Expense extends Entity<Expense> {
         super(result);
     }
 
+    public Expense() {
+        super();
+    }
+
     @Override
     public List<String> getPrettyNames() {
         return getFieldNames(this.getClass(), null);

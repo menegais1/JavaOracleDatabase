@@ -5,6 +5,7 @@ import DatabaseAccess.Domain.Base.BaseController;
 import DatabaseAccess.Domain.Base.Entity;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -68,7 +69,8 @@ public class ViewBuilder {
         for (int i = 0; i < fields.size(); i++) {
             String field = fields.get(i);
             HBox hBox = new HBox();
-            hBox.setPadding(new Insets(5, 10, 5, 15));
+            hBox.setAlignment(Pos.CENTER_RIGHT);
+            hBox.setPadding(new Insets(5, 30, 5, 15));
             Label label = new Label(field);
             label.setPadding(new Insets(3, 8, 3, 3));
             label.setTextAlignment(TextAlignment.CENTER);
@@ -79,8 +81,9 @@ public class ViewBuilder {
             } catch (NoSuchFieldException ex) {
                 ex.printStackTrace();
             }
-            textField.setText(data.get(i).y.toString());
-            textField.setPadding(new Insets(10, 3, 10, 3));
+            if (data.get(i).y != null)
+                textField.setText(data.get(i).y.toString());
+            textField.setPadding(new Insets(10, 90, 10, 3));
             textFields.add(textField);
             hBox.getChildren().addAll(label, textField);
             vBox.getChildren().add(hBox);
@@ -114,7 +117,6 @@ public class ViewBuilder {
 
     }
 
-
     public static void initInsertModalWindow(BaseController controller, String title, Stage primaryStage, BorderPane pane) {
 
         Stage modal = new Stage();
@@ -127,8 +129,14 @@ public class ViewBuilder {
         for (int i = 0; i < fields.size(); i++) {
             String field = fields.get(i);
             HBox hBox = new HBox();
+            hBox.setAlignment(Pos.CENTER_RIGHT);
+            hBox.setPadding(new Insets(5, 30, 5, 15));
             Label label = new Label(field);
+            label.setPadding(new Insets(3, 8, 3, 3));
+            label.setTextAlignment(TextAlignment.CENTER);
             TextField textField = new TextField();
+            textField.setPadding(new Insets(10, 90, 10, 3));
+            textField.setTranslateX(30);
             textFields.add(textField);
             hBox.getChildren().addAll(label, textField);
             vBox.getChildren().add(hBox);

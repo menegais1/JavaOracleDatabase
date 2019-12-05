@@ -38,7 +38,7 @@ public class SupplierController extends BaseController {
             }
         }
 
-        return c.insert(c, (String[]) fields.toArray(), DatabaseConnection.getInstance());
+        return c.insert(c, fields.toArray(new String[0]), DatabaseConnection.getInstance());
     }
 
     @Override

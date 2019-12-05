@@ -3,6 +3,8 @@ package DatabaseAccess.View;
 
 import DatabaseAccess.Domain.Client.ClientController;
 import DatabaseAccess.Domain.Client.ClientView;
+import DatabaseAccess.Domain.Expense.ExpenseController;
+import DatabaseAccess.Domain.Expense.ExpenseView;
 import DatabaseAccess.Domain.Supplier.SupplierController;
 import DatabaseAccess.Domain.Supplier.SupplierView;
 import javafx.application.Application;
@@ -24,9 +26,10 @@ public class GUIView extends Application implements View {
         BorderPane root = new BorderPane();
         TabPane tabs = new TabPane();
         tabs.tabClosingPolicyProperty().setValue(TabPane.TabClosingPolicy.UNAVAILABLE);
-        ClientView clientView = new ClientView(new ClientController(), primaryStage,root);
-        SupplierView supplierView = new SupplierView(new SupplierController(), primaryStage,root);
-        tabs.getTabs().addAll(clientView.tab, supplierView.tab);
+        ClientView clientView = new ClientView(new ClientController(), primaryStage, root);
+        SupplierView supplierView = new SupplierView(new SupplierController(), primaryStage, root);
+        ExpenseView expenseView = new ExpenseView(new ExpenseController(), primaryStage, root);
+        tabs.getTabs().addAll(clientView.tab, supplierView.tab, expenseView.tab);
 
         root.setTop(tabs);
         //initMenu(primaryStage, root);
