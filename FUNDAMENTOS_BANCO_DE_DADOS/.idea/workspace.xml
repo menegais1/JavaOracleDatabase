@@ -10,43 +10,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/BaseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Controller/SupplierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Expense.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Expense.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Package.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/PackageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/PackageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/PaymentMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/PaymentMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Revenue.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Revenue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/ServiceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/ServiceType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Model/Supplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Utils/ViewBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/Utils/ViewBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/View/ClientView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/View/ClientView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/View/SupplierView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DatabaseAccess/View/SupplierView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/SupplierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Expense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Package.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/PackageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/PackageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/PaymentMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/PaymentMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Revenue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Revenue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/ServiceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/ServiceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/ViewBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/ViewBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/ClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/ClientView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/SupplierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/SupplierView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../table_definitions.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../table_definitions.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../table_insertions.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../table_insertions.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../table_views.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../table_views.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -90,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/View/SupplierView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="124">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -99,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/View/ClientView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-107">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,83 +77,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/ClientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="250">
+              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/Helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Client#1;class#Client#0" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="method#toString#0;class#Client#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="149" column="26" lean-forward="true" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
+            <state relative-caret-position="181">
+              <caret line="186" column="97" selection-start-line="186" selection-start-column="97" selection-end-line="186" selection-end-column="97" />
               <folding>
+                <element signature="method#Entity#1;class#Entity#0" />
                 <element signature="method#fillEntity#0;class#Entity#0" />
+                <element signature="e#776#941#0" />
+                <element signature="e#990#1042#0" />
                 <element signature="method#getSingle#0;class#Entity#0" />
+                <element signature="e#1469#1560#0" />
+                <element signature="e#1672#1717#0" />
+                <element signature="method#getAll#0;class#Entity#0" />
+                <element signature="e#2167#2472#1" />
+                <element signature="e#2185#2298#0" />
+                <element signature="e#2409#2461#0" />
                 <element signature="method#insert#0;class#Entity#0" />
+                <element signature="e#2985#3121#0" />
+                <element signature="e#3146#3191#0" />
+                <element signature="e#3710#3815#0" />
+                <element signature="e#3873#3918#0" />
                 <element signature="method#delete#0;class#Entity#0" />
                 <element signature="method#getBindings#0;class#Entity#0" />
+                <element signature="e#4605#4912#1" />
+                <element signature="e#4664#4791#0" />
+                <element signature="e#4826#4902#0" />
                 <element signature="method#bindsToArray#0;class#Entity#0" />
-                <element signature="method#insertQueryFieldsValue#0;class#Entity#0" />
-                <element signature="method#updateQueryFieldsValue#0;class#Entity#0" />
+                <element signature="e#5151#5204#1" />
+                <element signature="method#getFields#0;class#Entity#0" />
+                <element signature="e#5510#5778#1" />
+                <element signature="e#5552#5768#1" />
+                <element signature="e#5574#5660#0" />
+                <element signature="e#5693#5754#0" />
+                <element signature="e#6314#6364#1" />
                 <element signature="method#getTableName#0;class#Entity#0" />
+                <element signature="e#6924#6996#1" />
+                <element signature="e#7002#7152#1" />
+                <element signature="method#getFieldNames#0;class#Entity#0" />
+                <element signature="e#7437#7713#1" />
+                <element signature="e#7548#7633#1" />
                 <element signature="method#name#0;class#Entity#0" />
                 <element signature="method#getData#0;class#Entity#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="method#getAll#0;class#BaseController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/SupplierController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/BaseView.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/ActionButtonTableCell.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/SupplierView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Expense.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/ServiceType.java" />
@@ -247,10 +197,12 @@
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Supplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/View/ClientView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/ViewBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/SupplierController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/Helpers.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java" />
       </list>
     </option>
   </component>
@@ -313,7 +265,25 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseAccess" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DatabaseViewArtifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FUNDAMENTOS_BANCO_DE_DADOS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DatabaseAccess" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DatabaseViewArtifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FUNDAMENTOS_BANCO_DE_DADOS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DatabaseAccess" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,12 +392,12 @@
       <workItem from="1575310190376" duration="17211000" />
       <workItem from="1575390459655" duration="12324000" />
       <workItem from="1575415987236" duration="6962000" />
-      <workItem from="1575498731547" duration="4571000" />
+      <workItem from="1575498731547" duration="6942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43814000" />
+    <option name="totallyTimeSpent" value="46185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -441,7 +411,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32852563" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34134614" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34134614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,7 +424,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.21686748" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.21686748" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.3298193" />
@@ -507,20 +477,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-12-oracle/lib/src.zip!/java.base/java/lang/IllegalAccessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-12-oracle/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1011,24 +967,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/View/SupplierView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="method#getAll#0;class#BaseController#0" />
-          </folding>
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1046,22 +985,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="149" column="26" lean-forward="true" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
+        <state relative-caret-position="231">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
           <folding>
-            <element signature="method#fillEntity#0;class#Entity#0" />
-            <element signature="method#getSingle#0;class#Entity#0" />
-            <element signature="method#insert#0;class#Entity#0" />
-            <element signature="method#delete#0;class#Entity#0" />
-            <element signature="method#getBindings#0;class#Entity#0" />
-            <element signature="method#bindsToArray#0;class#Entity#0" />
-            <element signature="method#insertQueryFieldsValue#0;class#Entity#0" />
-            <element signature="method#updateQueryFieldsValue#0;class#Entity#0" />
-            <element signature="method#getTableName#0;class#Entity#0" />
-            <element signature="method#name#0;class#Entity#0" />
-            <element signature="method#getData#0;class#Entity#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Client#1;class#Client#0" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="method#toString#0;class#Client#0" />
           </folding>
         </state>
       </provider>
@@ -1069,9 +1002,33 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/View/ClientView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-107">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-12-oracle/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10502">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="method#getAll#0;class#BaseController#0" />
           </folding>
         </state>
       </provider>
@@ -1093,24 +1050,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Controller/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="250">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Utils/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="231">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseAccess/Model/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="186" column="97" selection-start-line="186" selection-start-column="97" selection-end-line="186" selection-end-column="97" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Client#1;class#Client#0" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="method#toString#0;class#Client#0" />
+            <element signature="method#Entity#1;class#Entity#0" />
+            <element signature="method#fillEntity#0;class#Entity#0" />
+            <element signature="e#776#941#0" />
+            <element signature="e#990#1042#0" />
+            <element signature="method#getSingle#0;class#Entity#0" />
+            <element signature="e#1469#1560#0" />
+            <element signature="e#1672#1717#0" />
+            <element signature="method#getAll#0;class#Entity#0" />
+            <element signature="e#2167#2472#1" />
+            <element signature="e#2185#2298#0" />
+            <element signature="e#2409#2461#0" />
+            <element signature="method#insert#0;class#Entity#0" />
+            <element signature="e#2985#3121#0" />
+            <element signature="e#3146#3191#0" />
+            <element signature="e#3710#3815#0" />
+            <element signature="e#3873#3918#0" />
+            <element signature="method#delete#0;class#Entity#0" />
+            <element signature="method#getBindings#0;class#Entity#0" />
+            <element signature="e#4605#4912#1" />
+            <element signature="e#4664#4791#0" />
+            <element signature="e#4826#4902#0" />
+            <element signature="method#bindsToArray#0;class#Entity#0" />
+            <element signature="e#5151#5204#1" />
+            <element signature="method#getFields#0;class#Entity#0" />
+            <element signature="e#5510#5778#1" />
+            <element signature="e#5552#5768#1" />
+            <element signature="e#5574#5660#0" />
+            <element signature="e#5693#5754#0" />
+            <element signature="e#6314#6364#1" />
+            <element signature="method#getTableName#0;class#Entity#0" />
+            <element signature="e#6924#6996#1" />
+            <element signature="e#7002#7152#1" />
+            <element signature="method#getFieldNames#0;class#Entity#0" />
+            <element signature="e#7437#7713#1" />
+            <element signature="e#7548#7633#1" />
+            <element signature="method#name#0;class#Entity#0" />
+            <element signature="method#getData#0;class#Entity#0" />
           </folding>
         </state>
       </provider>

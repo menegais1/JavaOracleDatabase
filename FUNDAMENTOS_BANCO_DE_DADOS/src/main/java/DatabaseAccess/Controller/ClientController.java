@@ -4,6 +4,7 @@ import DatabaseAccess.Model.Client;
 import DatabaseAccess.Model.Entity;
 import DatabaseAccess.Model.Supplier;
 import DatabaseAccess.Utils.DatabaseConnection;
+import DatabaseAccess.Utils.Helpers;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -27,7 +28,11 @@ public class ClientController extends BaseController {
             String fieldName = fields.get(i);
             try {
                 Field f = c.getClass().getField(fieldName);
-                f.set(c, f.getType().cast(values.get(i)));
+                Object value = Helpers.convertStringToObject(values.get(i), f.getType());
+                if (f.getType() == String.class)
+                    f.set(c, value.toString());
+                else
+                    f.set(c, f.getType().cast(value));
             } catch (IllegalAccessException | NoSuchFieldException e) {
                 e.printStackTrace();
             }
@@ -42,13 +47,17 @@ public class ClientController extends BaseController {
             String fieldName = fields.get(i);
             try {
                 Field f = e.getClass().getField(fieldName);
-                f.set(e, f.getType().cast(values.get(i)));
+                Object value = Helpers.convertStringToObject(values.get(i), f.getType());
+                if (f.getType() == String.class)
+                    f.set(e, value.toString());
+                else
+                    f.set(e, f.getType().cast(value));
             } catch (IllegalAccessException | NoSuchFieldException ex) {
                 ex.printStackTrace();
             }
         }
 
-        return e.update(e, (String[]) fields.toArray(), DatabaseConnection.getInstance());
+        return e.update(e, fields.toArray(new String[0]),DatabaseConnection.getInstance());
     }
 
 

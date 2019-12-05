@@ -182,8 +182,9 @@ public abstract class Entity<T> {
 
         StringBuilder queryBuilder = new StringBuilder("");
         for (Field field : fields) {
-            queryBuilder.append(field.getName()).append(" = ?");
+            queryBuilder.append(field.getName()).append(" = ?,");
         }
+        queryBuilder.replace(queryBuilder.lastIndexOf(","), queryBuilder.lastIndexOf(",") + 1, " ");
 
         return queryBuilder.toString();
     }
